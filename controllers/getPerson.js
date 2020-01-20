@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports = (req, res) => {
-	axios.get(`https://swapi.co/api/people/${req.params.id}`)
+	axios.get(`http://swapi.co/api/people/${req.params.id}`)
   .then(response => {
 		console.log(res.data)
 		let person = response.data
